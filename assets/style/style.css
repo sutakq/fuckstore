@@ -92,7 +92,12 @@ header{
     align-items: center;
     grid-gap: 32px;
 }
-
+.nav-link{
+    transition: 0.3s;
+}
+.nav-link:hover{
+    text-decoration: underline;
+}
 .logo{
     width: 145px;
     margin-right: 140px;
@@ -161,6 +166,7 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    transition: 0.3s;
 }
 .card--item a{
     padding-top: 8px;
@@ -179,6 +185,9 @@ header{
 
 .card--item img{
     width: 337px;
+}
+.card--item:hover img{
+    transform: translateY(-20px);
 }
 .old-item--price{
     color: var(--second);
